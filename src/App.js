@@ -3,7 +3,7 @@ import './App.css';
 import axios from "axios";
 import Formtable from './components/Formtable.jsx';
 
-axios.defaults.baseURL = "http://localhost:8080/";
+axios.defaults.baseURL = "https://curd-backend-naxl.onrender.com/";
 
 function App() {
   const [addSection, setAddSection] = useState(false);
