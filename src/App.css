@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #f5f6ff;
+  border-radius: 5px;
 }
+.container{
+  padding: 10px;
+  /* background-color: red; */
+  max-width: fit-content;
+  margin: 50px auto;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn{
+  border: none;
+  padding: 7px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  
+  color: white;
+  cursor: pointer;
+}
+.btn-add{
+  background: #194064;
+}
+.addcontainer{
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addcontainer form{
+  width: 420px;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 50px 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+.addcontainer form label{
+  font-size: 18px;
+}
+.addcontainer form input{
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.addcontainer form button{
+  background-color: royalblue;
   color: white;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.addcontainer form .close-btn{
+  margin-left: auto;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+.tablecontainer{
+  margin-top: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.addcontainer table{
+  border : 1px solid #c9c5c2
 }
 
-.App-link {
-  color: #61dafb;
+.tablecontainer table thead tr{
+  background-color: #f0eaea;
+  text-align: center;
+ 
 }
+.tablecontainer table tbody tr{
+  border : 1px solid #c9c5c2
+}
+.tablecontainer table thead tr th,
+.tablecontainer table tbody tr td
+{
+  min-width: 200px;
+  padding: 7px;
+  text-align: center;
+  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.tablecontainer table tbody tr td{
+  border-bottom: 1px solid #c9c5c2;
+}
+.btn-edit,.btn-delete{
+  color: black;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 0px 10px;
+
+}
+.btn-edit{
+  background-color: #e2f413;
+}
+.btn-delete{
+  background-color: #fa1717;
+  color: white;
 }
